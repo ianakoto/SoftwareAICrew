@@ -172,6 +172,22 @@ Agent and task configurations are stored in YAML files:
 
 Click the "View metrics on Langtrace" button in the Streamlit sidebar to access detailed performance metrics.
 
+
+## 🌟 Future Improvements
+
+To enhance the capabilities of the Software Engineering Idea Processor, the following features are planned:
+
+1. **Code Interpreter Agent**: This agent will dynamically interpret and execute code within the application, allowing for more interactive and real-time code generation.
+
+2. **Sandbox Agent**: A specialized agent designed to test generated code within a physical system or environment, rather than relying solely on language models. This would provide more reliable and real-world validation of the generated code.
+
+3. **File Writer Agent**: An agent that writes the final code output into a structured directory and folder system, making the generated code more readily usable in real-world projects.
+
+4. **Enhanced Task Management**: Introducing tasks for the File Writer Agent to organize and place code files in appropriate locations, ensuring that the generated project is production-ready with minimal manual adjustments.
+
+These enhancements will further extend the system's ability to produce practical, real-world software solutions from abstract ideas.
+
+
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
