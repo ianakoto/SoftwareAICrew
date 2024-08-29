@@ -1,5 +1,7 @@
 # Software Engineering Idea Processor
 
+![Software Engineering Idea Processor](app/images/SoftwareEngCrewAI.PNG)
+
 ## 🚀 Overview
 
 The Software Engineering Idea Processor is an innovative multi-agent AI system that transforms high-level project ideas into detailed software specifications and code structures. Built using CrewAI and Streamlit, this application leverages a team of specialized AI agents to break down, design, and implement software projects based on user input.
@@ -48,7 +50,7 @@ The Software Engineering Idea Processor is an innovative multi-agent AI system t
 
 The system uses several specialized AI agents:
 
-- **Manager**: Oversees the project and coordinates other agents.
+- **Project Manager**: Oversees the project and coordinates other agents.
 - **UI/UX Engineer**: Selects appropriate design templates and interactive elements.
 - **Frontend Engineer**: Develops React-based frontend code.
 - **Backend Engineer**: Creates TypeScript and Express-based backend structure.
