@@ -95,8 +95,8 @@ Agent and task configurations are stored in YAML files:
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/software-engineering-idea-processor.git
-   cd software-engineering-idea-processor
+   git clone https://github.com/yourusername/SoftwareAICrew.git
+   cd SoftwareAICrew
    ```
 2. Setup a virtual environment
 
