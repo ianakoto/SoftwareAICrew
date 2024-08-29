@@ -62,6 +62,25 @@ The system uses several specialized AI agents:
 - **Backend Architecture**: Creates TypeScript and Express-based backend structure.
 - **Code Organization**: Compiles and organizes all generated code into a coherent project structure.
 
+### 🛠 CrewAI Tools
+
+The application utilizes the following tools from the CrewAI toolkit to enhance agent functionality:
+
+- **SerperDevTool**:
+  - A search tool that leverages the Serper API to perform efficient web searches, focusing on developer-related content.
+  - Used by the Manager, Frontend Engineer, Backend Engineer, and UI/UX Engineer to gather relevant information and resources.
+
+- **CodeDocsSearchTool**:
+  - A powerful RAG (Retrieval-Augmented Generation) tool designed for semantic searches within code documentation
+  - Specialized for finding documentation and code examples, crucial for agents that require specific technical references.
+  - Integrated into the Frontend Engineer and Backend Engineer agents to assist in generating accurate and well-documented code.
+
+- **WebsiteSearchTool**:
+  - It aims to leverage advanced machine learning models like Retrieval-Augmented Generation (RAG) to navigate and extract information from specified URLs efficiently.
+  - A tool designed to search websites for specific content, ideal for locating design templates, tutorials, and other resources.
+  - Employed by the UI/UX Engineer and Manager to find design examples and additional information relevant to the project.
+
+
 ### 🔧 Configuration
 
 Agent and task configurations are stored in YAML files:
