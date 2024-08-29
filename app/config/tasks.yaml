@@ -1,0 +1,60 @@
+idea_expansion_task:
+  description: >
+    Concisely break down and expand on the project idea. Focus on core features and requirements.
+    Limit all searches to top 3 results.
+    
+    IDEA:
+    {idea}
+  expected_output: "A concise project idea report focusing on core features and requirements"
+  agent: manager
+
+ui_ux_search_task:
+  description: >
+    1. Search for top 3 UI/UX design templates/examples aligned with the idea_expansion_task output.
+    2. Select the best-matching design and identify key interactive elements.
+    3. Prepare a brief report on the selected design, including:
+       - Reasons for selection
+       - How it aligns with project goals
+       - Key interactive elements
+       - Basic accessibility considerations
+
+    Output Format: Provide a JSON object containing:
+    1. Link to selected design
+    2. Brief analysis report
+    3. List of key interactive elements
+  expected_output: "A JSON object with selected design, brief analysis, and key elements"
+  agent: ui_ux_agent
+
+frontend_task:
+  description: >
+    1. Wait to receive outputs from  ui_ux_search_task.
+    2. Implement frontend code application using React based on received parameters:
+       a. Write the react components, pages, views, etc.
+    3. Integrate with backend APIs as specified.
+
+    Output Format: JSON object with:
+    1. Full React codes
+  expected_output: "JSON object with all react frontend codes"
+  agent: frontend_engineer
+
+backend_task:
+  description: >
+    1. Architect the  API specifications and implementation parameters.
+    2. Create the Backend codes in typescript based on received parameters (i.e necessary API routes, controllers, middleware, modules):
+       a. Write the routes codes
+       b. Write the controllers codes
+       c. Write the middleware codes
+       d. Write the modules codes
+       e. Write the main app codes
+
+    Output Format: JSON object with:
+    1. All Backend codes (routes, controllers, middleware, modules, main app, or all generated codes)
+  expected_output: "JSON object with all backend codes"
+  agent: backend_engineer
+
+writer_agent_task:
+  description: >
+    1. Receive all frontend and backend codes.
+    2. Organize received codes.
+  expected_output: "The full codes of both the frontend and backend"
+  agent: writer_agent
